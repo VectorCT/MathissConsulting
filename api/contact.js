@@ -1,5 +1,25 @@
 const nodemailer = require('nodemailer');
 
+function readEnv(name) {
+  const value = process.env[name];
+  if (typeof value !== 'string') {
+    return '';
+  }
+
+  const trimmed = value.trim();
+  return trimmed.replace(/^['\"](.*)['\"]$/, '$1').trim();
+}
+
+function parsePort(value) {
+  const normalized = String(value || '').trim();
+  if (!normalized) {
+    return 0;
+  }
+
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
 function sendJsonResponse(res, statusCode, payload) {
   res.statusCode = statusCode;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -88,39 +108,57 @@ function validateContactPayload(payload) {
 }
 
 function createMailTransport() {
-  const smtpHost = process.env.SMTP_HOST;
-  const smtpPort = Number(process.env.SMTP_PORT || '0');
-  const smtpUser = process.env.SMTP_USER;
-  const smtpPass = process.env.SMTP_PASS;
+  const smtpHost = readEnv('SMTP_HOST');
+  const smtpPort = parsePort(readEnv('SMTP_PORT'));
+  const smtpUser = readEnv('SMTP_USER');
+  const smtpPass = readEnv('SMTP_PASS');
 
-  if (!smtpHost || !smtpPort || !smtpUser || !smtpPass) {
-    return null;
+  const missing = [];
+  if (!smtpHost) {
+    missing.push('SMTP_HOST');
+  }
+  if (!smtpPort) {
+    missing.push('SMTP_PORT');
+  }
+  if (!smtpUser) {
+    missing.push('SMTP_USER');
+  }
+  if (!smtpPass) {
+    missing.push('SMTP_PASS');
   }
 
-  const smtpSecure = process.env.SMTP_SECURE === 'true' || smtpPort === 465;
+  if (missing.length > 0) {
+    return { transporter: null, missing };
+  }
 
-  return nodemailer.createTransport({
-    host: smtpHost,
-    port: smtpPort,
-    secure: smtpSecure,
-    auth: {
-      user: smtpUser,
-      pass: smtpPass
-    }
-  });
+  const smtpSecure = readEnv('SMTP_SECURE').toLowerCase() === 'true' || smtpPort === 465;
+
+  return {
+    missing: [],
+    transporter: nodemailer.createTransport({
+      host: smtpHost,
+      port: smtpPort,
+      secure: smtpSecure,
+      auth: {
+        user: smtpUser,
+        pass: smtpPass
+      }
+    })
+  };
 }
 
 async function sendContactEmail(payload) {
-  const transporter = createMailTransport();
+  const { transporter, missing } = createMailTransport();
 
   if (!transporter) {
     const configurationError = new Error('Email service is not configured.');
     configurationError.code = 'MAIL_NOT_CONFIGURED';
+    configurationError.missing = missing || [];
     throw configurationError;
   }
 
-  const recipientEmail = process.env.CONTACT_TO_EMAIL || 'info@mathissconsulting.co.za';
-  const senderEmail = process.env.SMTP_FROM || process.env.SMTP_USER || 'no-reply@mathissconsulting.co.za';
+  const recipientEmail = readEnv('CONTACT_TO_EMAIL') || 'info@mathissconsulting.co.za';
+  const senderEmail = readEnv('SMTP_FROM') || readEnv('SMTP_USER') || 'no-reply@mathissconsulting.co.za';
   const senderName = `${payload.firstName} ${payload.lastName}`.trim();
   const subject = `New inquiry from ${senderName} (${payload.service})`;
 
@@ -195,7 +233,8 @@ module.exports = async function handler(req, res) {
     if (error && error.code === 'MAIL_NOT_CONFIGURED') {
       sendJsonResponse(res, 503, {
         ok: false,
-        message: 'Email service is not configured on the server yet. Please set SMTP environment variables.'
+        message: 'Email service is not configured on the server yet. Please set SMTP environment variables.',
+        missing: error.missing || []
       });
       return;
     }
