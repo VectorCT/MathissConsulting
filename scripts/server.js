@@ -40,7 +40,14 @@ function sendResponse(res, statusCode, contentType, content) {
   res.end(content);
 }
 
+function setCorsHeaders(res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+}
+
 function sendJsonResponse(res, statusCode, payload) {
+  setCorsHeaders(res);
   sendResponse(res, statusCode, 'application/json; charset=utf-8', JSON.stringify(payload));
 }
 
@@ -131,6 +138,9 @@ function createMailTransport() {
     auth: {
       user: smtpUser,
       pass: smtpPass
+    },
+    tls: {
+      rejectUnauthorized: false
     }
   });
 }
@@ -188,8 +198,16 @@ async function sendContactEmail(payload) {
 }
 
 async function handleContactRequest(req, res) {
+  setCorsHeaders(res);
+
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204);
+    res.end();
+    return;
+  }
+
   if (req.method !== 'POST') {
-    res.setHeader('Allow', 'POST');
+    res.setHeader('Allow', 'POST, OPTIONS');
     sendJsonResponse(res, 405, { ok: false, message: 'Method Not Allowed' });
     return;
   }
