@@ -19,6 +19,6 @@
     <path d="M520 430L600 350L680 430"/>
     <path d="M790 430L870 350L950 430"/>
   </g>
-  <rect x="78" y="78" width="360" height="80" rx="10" fill="#c8a24d"/>
+  <rect x="78" y="78" width="420" height="80" rx="10" fill="#c8a24d"/>
   <text x="108" y="128" fill="#0b1f3a" font-size="42" font-family="Arial, sans-serif" font-weight="700">Related Services</text>
 </svg>

@@ -20,6 +20,6 @@
     <circle cx="680" cy="220" r="10"/>
     <circle cx="840" cy="500" r="10"/>
   </g>
-  <rect x="78" y="78" width="430" height="80" rx="10" fill="#c8a24d"/>
+  <rect x="78" y="78" width="760" height="80" rx="10" fill="#c8a24d"/>
   <text x="108" y="128" fill="#0b1f3a" font-size="42" font-family="Arial, sans-serif" font-weight="700">Civil &amp; Structural Engineering</text>
 </svg>

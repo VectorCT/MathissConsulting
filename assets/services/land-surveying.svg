@@ -19,6 +19,6 @@
     <circle cx="860" cy="310" r="22" fill="#0b1f3a"/>
     <path d="M860 366L900 470H820Z" fill="#c8a24d"/>
   </g>
-  <rect x="78" y="78" width="360" height="80" rx="10" fill="#c8a24d"/>
+  <rect x="78" y="78" width="390" height="80" rx="10" fill="#c8a24d"/>
   <text x="108" y="128" fill="#0b1f3a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Land Surveying</text>
 </svg>

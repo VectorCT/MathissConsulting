@@ -20,6 +20,6 @@
     <path d="M960 0V700"/>
   </g>
   <path d="M80 520 C260 430 420 540 620 460 C760 400 900 430 1120 360" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round"/>
-  <rect x="78" y="78" width="360" height="80" rx="10" fill="#c8a24d"/>
+  <rect x="78" y="78" width="430" height="80" rx="10" fill="#c8a24d"/>
   <text x="108" y="128" fill="#0b1f3a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Township Planning</text>
 </svg>

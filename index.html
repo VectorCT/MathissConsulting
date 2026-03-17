@@ -26,8 +26,9 @@
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        
         <a href="portfolio.html">Projects</a>
         <a href="impact.html">Impact &amp; Legacy</a>
         <a href="testimonials.html">Testimonials</a>
@@ -39,7 +40,7 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="animate-in-left">
           <p class="eyebrow">Integrated Multidisciplinary Consulting</p>
           <h1>Designing Spaces. Building Legacies.</h1>
           <p class="lead">
@@ -57,7 +58,7 @@
             <li>Community-centered impact and legacy focus</li>
           </ul>
         </div>
-        <aside class="hero-panel" aria-label="Company at a glance">
+        <aside class="hero-panel animate-in-right" aria-label="Company at a glance">
           <h2>Company Snapshot</h2>
           <p>
             Founded by Mbofholowo Ungani Mathiss, MATHISS Consulting is driven by technical excellence, social responsibility,
@@ -75,12 +76,31 @@
       </div>
     </section>
 
+    <section class="section home-metrics">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature-item card-hover animate-in">
+            <p class="feature-number">6</p>
+            <p class="feature-label">Integrated Service Disciplines</p>
+          </article>
+          <article class="feature-item card-hover animate-in">
+            <p class="feature-number">5</p>
+            <p class="feature-label">Professional Registrations</p>
+          </article>
+          <article class="feature-item card-hover animate-in">
+            <p class="feature-number">1</p>
+            <p class="feature-label">Trusted Multidisciplinary Partner</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <h2 class="section-title">Featured Services</h2>
         <p class="section-intro">End-to-end professional consulting services across planning, design, engineering, delivery, and compliance.</p>
         <div class="card-grid three">
-          <article class="card service-card">
+          <article class="card service-card card-hover">
             <img class="service-splash" src="assets/services/township-planning.svg" alt="Township and urban planning splash visual" loading="lazy">
             <div class="service-card-body">
               <h3>Township &amp; Urban Planning</h3>
@@ -88,7 +108,7 @@
               <a href="services.html#township-planning" class="text-link">Explore Service</a>
             </div>
           </article>
-          <article class="card service-card">
+          <article class="card service-card card-hover">
             <img class="service-splash" src="assets/services/architecture.svg" alt="Architecture splash visual" loading="lazy">
             <div class="service-card-body">
               <h3>Architecture</h3>
@@ -96,7 +116,7 @@
               <a href="services.html#architecture" class="text-link">Explore Service</a>
             </div>
           </article>
-          <article class="card service-card">
+          <article class="card service-card card-hover">
             <img class="service-splash" src="assets/services/engineering.svg" alt="Civil and structural engineering splash visual" loading="lazy">
             <div class="service-card-body">
               <h3>Civil &amp; Structural Engineering</h3>
@@ -104,7 +124,7 @@
               <a href="services.html#engineering" class="text-link">Explore Service</a>
             </div>
           </article>
-          <article class="card service-card">
+          <article class="card service-card card-hover">
             <img class="service-splash" src="assets/services/construction.svg" alt="Construction management splash visual" loading="lazy">
             <div class="service-card-body">
               <h3>Construction Management</h3>
@@ -112,7 +132,7 @@
               <a href="services.html#construction" class="text-link">Explore Service</a>
             </div>
           </article>
-          <article class="card service-card">
+          <article class="card service-card card-hover">
             <img class="service-splash" src="assets/services/quantity-surveying.svg" alt="Quantity surveying splash visual" loading="lazy">
             <div class="service-card-body">
               <h3>Quantity Surveying</h3>
@@ -120,7 +140,7 @@
               <a href="services.html#quantity-surveying" class="text-link">Explore Service</a>
             </div>
           </article>
-          <article class="card service-card">
+          <article class="card service-card card-hover">
             <img class="service-splash" src="assets/services/land-surveying.svg" alt="Land surveying splash visual" loading="lazy">
             <div class="service-card-body">
               <h3>Land Surveying</h3>
@@ -134,7 +154,12 @@
 
     <section class="section section-alt">
       <div class="container split">
-        <div>
+        <article class="card card-hover animate-in-left">
+          <span class="icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
+              <path d="M12 2L15.09 8.26H22L17.45 12.92L20.09 19.26L12 14.6L3.91 19.26L6.55 12.92L2 8.26H8.91L12 2Z"/>
+            </svg>
+          </span>
           <h2 class="section-title">Professional Credentials</h2>
           <p class="section-intro">MATHISS Consulting is built on recognized academic qualifications and regulated professional registration.</p>
           <ul class="detail-list">
@@ -144,8 +169,15 @@
             <li>Registrations: NHBRC, SACAP, SACPLAN, ECSA, CIDB</li>
           </ul>
           <p class="muted">Professional body logos can be added to this section once usage permissions are confirmed.</p>
-        </div>
-        <div class="impact-panel">
+        </article>
+        <article class="impact-panel card-hover animate-in-right">
+          <span class="icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+              <polyline points="17 21 17 13 7 13 7 21"/>
+              <polyline points="7 3 7 8 15 8"/>
+            </svg>
+          </span>
           <h3>Vision</h3>
           <p>
             To be recognized as South Africa's premier multidisciplinary consulting firm, delivering sustainable and innovative
@@ -156,15 +188,15 @@
             To empower communities, businesses, and institutions with professional, innovative, and sustainable consulting services
             that meet the highest technical standards and positively impact society.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container cta-wrap">
         <div>
-          <h2>Build your next project with confidence.</h2>
-          <p>Partner with MATHISS Consulting for technically sound, sustainable, and socially responsible project delivery.</p>
+          <h2>Ready to Start Your Project?</h2>
+          <p>Let's discuss your consulting needs and create something remarkable together.</p>
         </div>
         <a class="btn btn-primary" href="contact.html">Start Your Consultation</a>
       </div>
