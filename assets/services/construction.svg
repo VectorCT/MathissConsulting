@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">Construction Management Splash</title>
-  <desc id="desc">Abstract construction skyline with crane motif in navy and gold.</desc>
+  <desc id="desc">Abstract construction skyline with crane motif in navy and red.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#122f55"/>
-      <stop offset="100%" stop-color="#0b1f3a"/>
+      <stop offset="0%" stop-color="#16407d"/>
+      <stop offset="100%" stop-color="#092a66"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="700" fill="url(#bg)"/>
@@ -14,9 +14,9 @@
   <rect x="470" y="380" width="100" height="200" fill="#ffffff" fill-opacity="0.25"/>
   <rect x="620" y="300" width="110" height="280" fill="#ffffff" fill-opacity="0.25"/>
   <rect x="780" y="350" width="130" height="230" fill="#ffffff" fill-opacity="0.25"/>
-  <path d="M920 180H1080" stroke="#c8a24d" stroke-width="10" stroke-linecap="round"/>
-  <path d="M1000 180V430" stroke="#c8a24d" stroke-width="10"/>
-  <path d="M1000 250L880 340" stroke="#c8a24d" stroke-width="8"/>
-  <rect x="78" y="78" width="600" height="80" rx="10" fill="#c8a24d"/>
-  <text x="108" y="128" fill="#0b1f3a" font-size="42" font-family="Arial, sans-serif" font-weight="700">Construction Management</text>
+  <path d="M920 180H1080" stroke="#c81d38" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1000 180V430" stroke="#c81d38" stroke-width="10"/>
+  <path d="M1000 250L880 340" stroke="#c81d38" stroke-width="8"/>
+  <rect x="78" y="78" width="600" height="80" rx="10" fill="#c81d38"/>
+  <text x="108" y="128" fill="#ffffff" font-size="42" font-family="Arial, sans-serif" font-weight="700">Construction Management</text>
 </svg>

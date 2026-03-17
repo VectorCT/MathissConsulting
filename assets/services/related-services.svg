@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">Related Services Splash</title>
-  <desc id="desc">Abstract advisory and impact motif using navy and gold tones.</desc>
+  <desc id="desc">Abstract advisory and impact motif using navy and red tones.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1f3a"/>
-      <stop offset="100%" stop-color="#163b69"/>
+      <stop offset="0%" stop-color="#092a66"/>
+      <stop offset="100%" stop-color="#24518f"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="700" fill="url(#bg)"/>
@@ -14,11 +14,11 @@
     <circle cx="830" cy="350" r="170"/>
     <path d="M120 350H1000"/>
   </g>
-  <g stroke="#c8a24d" stroke-width="9" stroke-linecap="round" fill="none">
+  <g stroke="#c81d38" stroke-width="9" stroke-linecap="round" fill="none">
     <path d="M250 430L330 350L410 430"/>
     <path d="M520 430L600 350L680 430"/>
     <path d="M790 430L870 350L950 430"/>
   </g>
-  <rect x="78" y="78" width="420" height="80" rx="10" fill="#c8a24d"/>
-  <text x="108" y="128" fill="#0b1f3a" font-size="42" font-family="Arial, sans-serif" font-weight="700">Related Services</text>
+  <rect x="78" y="78" width="420" height="80" rx="10" fill="#c81d38"/>
+  <text x="108" y="128" fill="#ffffff" font-size="42" font-family="Arial, sans-serif" font-weight="700">Related Services</text>
 </svg>

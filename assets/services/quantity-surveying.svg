@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">Quantity Surveying Splash</title>
-  <desc id="desc">Abstract chart and measurement motif in navy and gold tones.</desc>
+  <desc id="desc">Abstract chart and measurement motif in navy and red tones.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1f3a"/>
-      <stop offset="100%" stop-color="#123157"/>
+      <stop offset="0%" stop-color="#092a66"/>
+      <stop offset="100%" stop-color="#164487"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="700" fill="url(#bg)"/>
@@ -15,12 +15,12 @@
     <rect x="620" y="250" width="120" height="310"/>
   </g>
   <path d="M130 560H760" stroke="#ffffff" stroke-width="6"/>
-  <path d="M180 500L350 430L520 360L680 310" stroke="#c8a24d" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <circle cx="350" cy="430" r="8" fill="#c8a24d"/>
-  <circle cx="520" cy="360" r="8" fill="#c8a24d"/>
-  <circle cx="680" cy="310" r="8" fill="#c8a24d"/>
+  <path d="M180 500L350 430L520 360L680 310" stroke="#c81d38" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="350" cy="430" r="8" fill="#c81d38"/>
+  <circle cx="520" cy="360" r="8" fill="#c81d38"/>
+  <circle cx="680" cy="310" r="8" fill="#c81d38"/>
   <rect x="840" y="210" width="260" height="360" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.45"/>
   <path d="M880 300H1060 M880 360H1060 M880 420H1000" stroke="#ffffff" stroke-opacity="0.75" stroke-width="6"/>
-  <rect x="78" y="78" width="520" height="80" rx="10" fill="#c8a24d"/>
-  <text x="108" y="128" fill="#0b1f3a" font-size="42" font-family="Arial, sans-serif" font-weight="700">Quantity Surveying</text>
+  <rect x="78" y="78" width="520" height="80" rx="10" fill="#c81d38"/>
+  <text x="108" y="128" fill="#ffffff" font-size="42" font-family="Arial, sans-serif" font-weight="700">Quantity Surveying</text>
 </svg>
