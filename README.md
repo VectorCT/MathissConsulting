@@ -56,6 +56,23 @@ Required/optional variables:
 - `CONTACT_TO_EMAIL` (optional, destination inbox; defaults to `info@mathissconsulting.co.za`)
 - `PORT` (optional, defaults to `8080`)
 
+## Deploying to Vercel
+
+This project uses static HTML pages and a serverless API endpoint at `api/contact.js`.
+
+1. In Vercel Project Settings, ensure **Root Directory** is the repository root (`MathissConsulting`).
+2. Add environment variables in **Settings → Environment Variables**:
+	- `SMTP_HOST`
+	- `SMTP_PORT`
+	- `SMTP_USER`
+	- `SMTP_PASS`
+	- `SMTP_SECURE` (use `true` when `SMTP_PORT=465`)
+	- `SMTP_FROM`
+	- `CONTACT_TO_EMAIL`
+3. Redeploy after saving environment variables.
+
+If you change variables later, trigger a new deployment so the function picks up updated values.
+
 ## Notes for Final Production Content
 
 - Replace `[Insert Office Address]` in `contact.html`.
