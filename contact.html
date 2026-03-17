@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact MATHISS Consulting for multidisciplinary consulting services in planning, architecture, engineering, construction, and surveying.">
+  <title>Contact Us | MATHISS Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="MATHISS Consulting home">
+        <img src="assets/logo.svg" alt="MATHISS Consulting logo">
+        <span>MATHISS Consulting</span>
+      </a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Projects</a>
+        <a href="impact.html">Impact &amp; Legacy</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact Us</p>
+        <h1>Let's discuss your project.</h1>
+        <p class="lead">Reach out for consultations, technical advisory discussions, and multidisciplinary project support.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split contact-split">
+        <div>
+          <h2 class="section-title">Get in Touch</h2>
+          <p><strong>Phone:</strong> <a href="tel:+27827909543">082 790 9543</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@mathissconsulting.co.za">info@mathissconsulting.co.za</a></p>
+          <p><strong>Website:</strong> <a href="https://www.mathissconsulting.co.za" target="_blank" rel="noopener">www.mathissconsulting.co.za</a></p>
+          <p><strong>Social:</strong> @MathissConsulting (LinkedIn, Instagram, Facebook)</p>
+          <p><strong>Office Address:</strong> [Insert Office Address]</p>
+
+          <div class="card">
+            <h3>Professional Bodies</h3>
+            <p>NHBRC | SACAP | SACPLAN | ECSA | CIDB</p>
+            <p class="muted">Official body logos can be inserted here once permissions are confirmed.</p>
+          </div>
+        </div>
+
+        <div class="card form-card">
+          <h2 class="section-title">Request a Consultation</h2>
+          <form id="contact-form" novalidate>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Township &amp; Urban Planning</option>
+              <option>Architecture</option>
+              <option>Civil &amp; Structural Engineering</option>
+              <option>Construction Management</option>
+              <option>Quantity Surveying</option>
+              <option>Land Surveying</option>
+              <option>Related Advisory Services</option>
+            </select>
+
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MATHISS Consulting</h3>
+        <p>Designing Spaces. Building Legacies.</p>
+      </div>
+      <div>
+        <p><strong>Phone:</strong> <a href="tel:+27827909543">082 790 9543</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@mathissconsulting.co.za">info@mathissconsulting.co.za</a></p>
+      </div>
+      <div>
+        <p><strong>Follow:</strong> @MathissConsulting</p>
+        <p><a href="https://www.mathissconsulting.co.za" target="_blank" rel="noopener">www.mathissconsulting.co.za</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> MATHISS Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

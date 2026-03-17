@@ -1,0 +1,10 @@
+{
+  "name": "mathiss-consulting-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static multi-page website for MATHISS Consulting.",
+  "scripts": {
+    "start": "node scripts/server.js",
+    "test": "node scripts/smoke-test.js"
+  }
+}
