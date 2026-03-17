@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Civil and Structural Engineering Splash</title>
+  <desc id="desc">Abstract structural frame and bridge line motif in navy and gold.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1f3a"/>
+      <stop offset="100%" stop-color="#1a3f70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="6">
+    <path d="M120 500H1080"/>
+    <path d="M180 500L330 250L480 500"/>
+    <path d="M520 500L680 220L840 500"/>
+    <path d="M160 280H880"/>
+    <path d="M260 360H980"/>
+  </g>
+  <g fill="#c8a24d" fill-opacity="0.9">
+    <circle cx="330" cy="250" r="10"/>
+    <circle cx="680" cy="220" r="10"/>
+    <circle cx="840" cy="500" r="10"/>
+  </g>
+  <rect x="78" y="78" width="430" height="80" rx="10" fill="#c8a24d"/>
+  <text x="108" y="128" fill="#0b1f3a" font-size="42" font-family="Arial, sans-serif" font-weight="700">Civil &amp; Structural Engineering</text>
+</svg>

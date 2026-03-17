@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Land Surveying Splash</title>
+  <desc id="desc">Abstract contour map and pinpoint motif in navy and gold colors.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2748"/>
+      <stop offset="100%" stop-color="#0b1f3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="4">
+    <path d="M60 540C220 480 290 590 440 530C580 470 660 560 810 510C930 470 1020 520 1150 500"/>
+    <path d="M40 470C220 420 310 500 470 450C620 400 700 480 850 430C980 390 1060 430 1180 410"/>
+    <path d="M40 390C230 340 320 420 490 370C640 320 760 390 900 350C1020 320 1100 340 1180 330"/>
+    <path d="M40 310C220 270 330 330 510 290C680 250 790 300 930 270C1030 250 1110 260 1180 250"/>
+  </g>
+  <g>
+    <circle cx="860" cy="310" r="54" fill="#c8a24d"/>
+    <circle cx="860" cy="310" r="22" fill="#0b1f3a"/>
+    <path d="M860 366L900 470H820Z" fill="#c8a24d"/>
+  </g>
+  <rect x="78" y="78" width="360" height="80" rx="10" fill="#c8a24d"/>
+  <text x="108" y="128" fill="#0b1f3a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Land Surveying</text>
+</svg>

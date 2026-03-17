@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture Splash</title>
+  <desc id="desc">Abstract architectural linework over navy and gold gradient.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123157"/>
+      <stop offset="100%" stop-color="#0b1f3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3">
+    <rect x="120" y="180" width="260" height="280"/>
+    <rect x="380" y="140" width="230" height="320"/>
+    <rect x="610" y="220" width="300" height="240"/>
+    <path d="M120 460L260 320L380 460"/>
+    <path d="M380 460L495 280L610 460"/>
+    <path d="M610 460L760 280L910 460"/>
+  </g>
+  <g stroke="#c8a24d" stroke-width="5" stroke-opacity="0.8">
+    <path d="M110 530H980"/>
+    <path d="M980 530L1080 430"/>
+  </g>
+  <rect x="78" y="78" width="270" height="80" rx="10" fill="#c8a24d"/>
+  <text x="108" y="128" fill="#0b1f3a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Architecture</text>
+</svg>

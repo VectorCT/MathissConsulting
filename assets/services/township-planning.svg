@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Township and Urban Planning Splash</title>
+  <desc id="desc">Abstract navy and gold planning grid with urban contour lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1f3a"/>
+      <stop offset="100%" stop-color="#123157"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g stroke="#c8a24d" stroke-opacity="0.35" fill="none">
+    <path d="M0 560H1200"/>
+    <path d="M0 500H1200"/>
+    <path d="M0 440H1200"/>
+    <path d="M160 0V700"/>
+    <path d="M320 0V700"/>
+    <path d="M480 0V700"/>
+    <path d="M640 0V700"/>
+    <path d="M800 0V700"/>
+    <path d="M960 0V700"/>
+  </g>
+  <path d="M80 520 C260 430 420 540 620 460 C760 400 900 430 1120 360" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <rect x="78" y="78" width="360" height="80" rx="10" fill="#c8a24d"/>
+  <text x="108" y="128" fill="#0b1f3a" font-size="44" font-family="Arial, sans-serif" font-weight="700">Township Planning</text>
+</svg>
