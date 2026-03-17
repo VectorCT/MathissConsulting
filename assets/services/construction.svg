@@ -3,8 +3,8 @@
   <desc id="desc">Abstract construction skyline with crane motif in navy and red.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#16407d"/>
-      <stop offset="100%" stop-color="#092a66"/>
+      <stop offset="0%" stop-color="#11356a"/>
+      <stop offset="100%" stop-color="#072456"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="700" fill="url(#bg)"/>
