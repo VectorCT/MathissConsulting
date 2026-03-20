@@ -348,6 +348,44 @@ h1 {
   font-size: 0.92rem;
 }
 
+.affiliate-logo-grid {
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.affiliate-logo-item {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.affiliate-logo-item img {
+  width: 100%;
+  height: 102px;
+  object-fit: contain;
+  background: var(--white);
+  border-radius: 12px;
+}
+
+.affiliate-logo-item:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(320px, 100%);
+}
+
+.affiliate-logo-item:hover,
+.affiliate-logo-item:focus-visible {
+  transform: translateY(-2px);
+  background: transparent;
+  box-shadow: 0 10px 20px var(--shadow-red-soft);
+}
+
 .page-hero {
   background: var(--gray-100);
   border-bottom: 1px solid var(--gray-300);
@@ -1123,6 +1161,15 @@ body.modal-open {
   .contact-info-block p,
   .contact-note {
     font-size: 0.98rem;
+  }
+
+  .affiliate-logo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .affiliate-logo-item:last-child {
+    grid-column: auto;
+    width: 100%;
   }
 
 }

@@ -75,6 +75,6 @@ If you change variables later, trigger a new deployment so the function picks up
 
 ## Notes for Final Production Content
 
-- Replace `[Insert Office Address]` in `contact.html`.
+- Confirm office address details in all footers: `22 Bickley Street, Meadowlands Zone 6, Johannesburg`.
 - Add approved project photos to portfolio cards.
-- Insert official logos for NHBRC, SACAP, SACPLAN, ECSA, CIDB once usage permissions are confirmed.
+- Replace affiliate badge placeholders in `assets/affiliates/` with approved official logos if preferred.
