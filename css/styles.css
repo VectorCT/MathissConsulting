@@ -146,9 +146,24 @@ img {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--brand-navy-bright), var(--brand-navy-mid));
+  position: relative;
+  background: url('/assets/WEBSITE%202026/Cover%202026%20website/MAIN%20MATHISS%20Image.png') center/cover no-repeat;
   color: var(--white);
   padding: 4.4rem 0 4rem;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8,18,45,0.83), rgba(8,18,45,0.62));
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1,
@@ -387,9 +402,32 @@ h1 {
 }
 
 .page-hero {
-  background: var(--gray-100);
-  border-bottom: 1px solid var(--gray-300);
+  position: relative;
+  background-color: var(--navy-900);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
   padding: 3.2rem 0 2.8rem;
+  color: var(--white);
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8,18,45,0.80), rgba(8,18,45,0.60));
+  z-index: 0;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero h1,
+.page-hero p {
+  color: var(--white);
 }
 
 .project-card {
