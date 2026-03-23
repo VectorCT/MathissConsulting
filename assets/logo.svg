@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-  <title id="title">MATHISS Consulting Logo</title>
-  <desc id="desc">Geometric icon in navy, red, and white representing planning, construction, and legacy.</desc>
-  <rect x="4" y="4" width="120" height="120" rx="22" fill="#072456"/>
-  <path d="M24 94 L48 30 L64 66 L80 30 L104 94" fill="none" stroke="#c81d38" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="30" y="72" width="16" height="22" fill="#ffffff" opacity="0.95"/>
-  <rect x="56" y="56" width="16" height="38" fill="#ffffff" opacity="0.95"/>
-  <rect x="82" y="46" width="16" height="48" fill="#ffffff" opacity="0.95"/>
-</svg>
