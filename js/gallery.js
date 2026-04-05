@@ -315,6 +315,12 @@ function setupFilterButtons() {
       // Filter gallery
       const filterValue = this.getAttribute("data-filter");
       transitionGallery(filterValue);
+
+      // Scroll to top of gallery
+      const galleryGrid = document.getElementById("galleryGrid");
+      if (galleryGrid) {
+        galleryGrid.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
   });
 }

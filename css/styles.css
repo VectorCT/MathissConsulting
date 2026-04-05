@@ -190,13 +190,18 @@ img {
 }
 
 .site-nav > a:hover,
-.site-nav > a.active,
 .nav-dropdown-toggle:hover,
-.nav-dropdown-toggle.active,
 .nav-dropdown:hover .nav-dropdown-toggle {
   color: var(--white);
   background: linear-gradient(135deg, var(--navy-900), var(--brand-navy-bright));
   border-color: transparent;
+}
+
+.site-nav > a.active,
+.nav-dropdown-toggle.active {
+  color: var(--navy-900);
+  background: transparent;
+  border-bottom-color: var(--brand-red);
 }
 
 .nav-toggle {
