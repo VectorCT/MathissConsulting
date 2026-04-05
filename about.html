@@ -22,9 +22,21 @@
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle">Services</a>
+          <div class="nav-dropdown-menu" aria-label="Services submenu">
+            <a href="service-township-planning.html">Township Planning</a>
+            <a href="service-architecture.html">Architecture</a>
+            <a href="service-engineering.html">Civil &amp; Structural Engineering</a>
+            <a href="service-construction.html">Construction Management</a>
+            <a href="service-quantity-surveying.html">Quantity Surveying</a>
+            <a href="service-land-surveying.html">Land Surveying</a>
+            <a href="service-related-services.html">Related Services</a>
+          </div>
+        </div>
         <a href="about.html">About Us</a>
         <a href="portfolio.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
         <a href="impact.html">Impact &amp; Legacy</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
@@ -43,7 +55,7 @@
 
     <section class="section">
       <div class="container">
-        <div class="founder-section">
+        <div class="founder-section scroll-animate" data-animate="fade-up">
           <div class="founder-visual" aria-label="Mbofholowo Ungani Mathiss, Founder and Managing Director">
             <img src="assets/profile.jpeg" alt="Mbofholowo Ungani Mathiss, Founder and Managing Director" loading="lazy">
           </div>
@@ -62,7 +74,7 @@
 
     <section class="section section-alt">
       <div class="container split">
-        <div class="card card-hover">
+        <div class="card card-hover scroll-animate" data-animate="fade-up" data-delay="0">
           <span class="icon-box" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
               <path d="M12 2L15.09 8.26H22L17.45 12.92L20.09 19.26L12 14.6L3.91 19.26L6.55 12.92L2 8.26H8.91L12 2Z"/>
@@ -75,7 +87,7 @@
             <li>Diploma in Architecture</li>
           </ul>
         </div>
-        <div class="card card-hover">
+        <div class="card card-hover scroll-animate" data-animate="fade-up" data-delay="1">
           <span class="icon-box" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
               <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
@@ -96,14 +108,14 @@
 
     <section class="section section-alt">
       <div class="container split">
-        <article>
+        <article class="scroll-animate" data-animate="fade-up" data-delay="0">
           <h2 class="section-title">Vision</h2>
           <p>
             To be recognized as South Africa's premier multidisciplinary consulting firm, delivering sustainable and innovative
             solutions while leaving a lasting legacy in urban development, planning, and construction.
           </p>
         </article>
-        <article>
+        <article class="scroll-animate" data-animate="fade-up" data-delay="1">
           <h2 class="section-title">Mission</h2>
           <p>
             To empower communities, businesses, and institutions with professional, innovative, and sustainable consulting services
@@ -116,9 +128,9 @@
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Core Values</h2>
+        <h2 class="section-title scroll-animate" data-animate="fade-up">Core Values</h2>
         <div class="card-grid three">
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="0">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M12 2L15.09 8.26H22L17.45 12.92L20.09 19.26L12 14.6L3.91 19.26L6.55 12.92L2 8.26H8.91L12 2Z"/>
@@ -127,7 +139,7 @@
             <h3>Excellence</h3>
             <p>Commitment to delivering high-quality outcomes in all projects.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="1">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
@@ -137,7 +149,7 @@
             <h3>Integrity</h3>
             <p>Transparent, ethical, and accountable practices.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="2">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M12 2L22 7V12C22 18.627 12 22 12 22S2 18.627 2 12V7L12 2Z"/>
@@ -147,7 +159,7 @@
             <h3>Innovation</h3>
             <p>Creative and sustainable solutions that meet modern challenges.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="3">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 8c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zm-7 0c.83 0 1.5.67 1.5 1.5S9.33 13 8.5 13 7 12.33 7 11.5 7.67 10 8.5 10zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
@@ -156,7 +168,7 @@
             <h3>Heritage &amp; Legacy</h3>
             <p>Preserving cultural roots while building a professional and family legacy.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="4">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -258,3 +270,5 @@
   </footer>
 </body>
 </html>
+
+

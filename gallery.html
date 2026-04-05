@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/affiliates/MATHISS%20Without%20Background.png">
-  <meta name="description" content="Read testimonials and case-study style outcomes from MATHISS Consulting multidisciplinary projects.">
-  <title>Testimonials | MATHISS Consulting</title>
+  <meta name="description" content="View MATHISS Consulting's construction projects, architectural works, and service implementations through our comprehensive photo gallery.">
+  <title>Gallery | MATHISS Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/main.js"></script>
+  <script defer src="js/gallery.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -36,7 +37,7 @@
         </div>
         <a href="about.html">About Us</a>
         <a href="portfolio.html">Projects</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="gallery.html" class="active">Gallery</a>
         <a href="impact.html">Impact &amp; Legacy</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
@@ -45,96 +46,55 @@
   </header>
 
   <main>
-    <section class="page-hero" style="background-image: url('assets/WEBSITE%202026/Cover%202026%20website/MAIN%20MATHISS%20Image.png')">
+    <section class="page-hero" style="background-image: url('assets/WEBSITE%202026/Cover%202026%20website/MATHISS%20Main%20Image%20004.png')">
       <div class="container">
-        <p class="hero-chip">Testimonials &amp; Case Studies</p>
-        <h1>Partnership outcomes grounded in professionalism and impact.</h1>
-        <p class="lead">Representative project outcomes are provided below. Detailed references and client endorsements are shared during consultations.</p>
+        <p class="hero-chip">Visual Showcase</p>
+        <h1>Construction &amp; Project Gallery</h1>
+        <p class="lead">Explore our completed construction projects, architectural designs, and service implementations through our comprehensive photo gallery.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Case Study Themes</h2>
-        <div class="card-grid two">
-          <article class="card testimonial-card card-hover">
-            <div class="quote-icon">&ldquo;</div>
-            <p><em>Integrated planning and surveying support improved alignment between design intent, approvals, and phased implementation.</em></p>
-            <div class="testimonial-head">
-              <div class="testimonial-avatar">TR</div>
-              <div class="testimonial-meta">
-                <h4>Township Redevelopment Coordination</h4>
-                <p>Project Delivery</p>
-              </div>
-            </div>
-            <div class="star-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-          </article>
-          <article class="card testimonial-card card-hover">
-            <div class="quote-icon">&ldquo;</div>
-            <p><em>Architecture, engineering, and construction management services supported quality-focused delivery and practical cost control.</em></p>
-            <div class="testimonial-head">
-              <div class="testimonial-avatar">RP</div>
-              <div class="testimonial-meta">
-                <h4>Residential Project Delivery</h4>
-                <p>Quality Assurance</p>
-              </div>
-            </div>
-            <div class="star-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-          </article>
-          <article class="card testimonial-card card-hover">
-            <div class="quote-icon">&ldquo;</div>
-            <p><em>Feasibility studies and technical advisory work strengthened decision-making for infrastructure development pathways.</em></p>
-            <div class="testimonial-head">
-              <div class="testimonial-avatar">IP</div>
-              <div class="testimonial-meta">
-                <h4>Infrastructure Planning Support</h4>
-                <p>Strategic Planning</p>
-              </div>
-            </div>
-            <div class="star-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-          </article>
-          <article class="card testimonial-card card-hover">
-            <div class="quote-icon">&ldquo;</div>
-            <p><em>Mentorship and development-focused project participation contributed to local skills growth and sustainable outcomes.</em></p>
-            <div class="testimonial-head">
-              <div class="testimonial-avatar">CI</div>
-              <div class="testimonial-meta">
-                <h4>Community Impact Initiatives</h4>
-                <p>Skills Development</p>
-              </div>
-            </div>
-            <div class="star-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-          </article>
+        <div class="gallery-header scroll-animate" data-animate="fade-up">
+          <h2 class="section-title">Gallery</h2>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="construction">Construction</button>
+            <button class="filter-btn" data-filter="services">Services</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Gallery items will be dynamically generated here -->
         </div>
       </div>
     </section>
 
     <section class="section section-alt">
-      <div class="container split">
-        <div>
-          <h2 class="section-title">Why Clients Work With MATHISS</h2>
-          <ul class="detail-list">
-            <li>Single multidisciplinary team across planning, design, engineering, and management</li>
-            <li>Strong compliance awareness with registered professional standing</li>
-            <li>Project strategies aligned to sustainability and community priorities</li>
-            <li>Professional communication and accountable delivery practices</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Need Verified References?</h3>
-          <p>Request project references and deeper case materials through a direct consultation with the team.</p>
-          <a class="btn btn-secondary" href="contact.html">Request Case Materials</a>
+      <div class="container">
+        <div class="cta-panel">
+          <h2>Ready to See Your Project Come to Life?</h2>
+          <p>Contact our team to discuss your next construction or design project.</p>
+          <a class="btn btn-primary" href="contact.html">Request a Consultation</a>
         </div>
       </div>
     </section>
+
+    <div id="gallery-modal" class="gallery-modal" hidden aria-hidden="true">
+      <div class="gallery-modal-backdrop" data-gallery-modal-close></div>
+      <div class="gallery-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title">
+        <button class="gallery-modal-close" type="button" aria-label="Close gallery viewer" data-gallery-modal-close>&times;</button>
+        <h3 id="gallery-modal-title" class="gallery-modal-title"></h3>
+        <iframe id="gallery-modal-frame" class="gallery-modal-frame" title="Gallery image preview" loading="lazy"></iframe>
+        <p id="gallery-modal-description" class="gallery-modal-description"></p>
+        <div class="gallery-modal-nav">
+          <button id="gallery-prev" class="gallery-nav-btn" type="button" aria-label="Previous image">&larr; Previous</button>
+          <button id="gallery-next" class="gallery-nav-btn" type="button" aria-label="Next image">Next &rarr;</button>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">

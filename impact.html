@@ -22,9 +22,21 @@
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle">Services</a>
+          <div class="nav-dropdown-menu" aria-label="Services submenu">
+            <a href="service-township-planning.html">Township Planning</a>
+            <a href="service-architecture.html">Architecture</a>
+            <a href="service-engineering.html">Civil &amp; Structural Engineering</a>
+            <a href="service-construction.html">Construction Management</a>
+            <a href="service-quantity-surveying.html">Quantity Surveying</a>
+            <a href="service-land-surveying.html">Land Surveying</a>
+            <a href="service-related-services.html">Related Services</a>
+          </div>
+        </div>
         <a href="about.html">About Us</a>
         <a href="portfolio.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
         <a href="impact.html">Impact &amp; Legacy</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
@@ -43,9 +55,9 @@
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Social Impact Initiatives</h2>
+        <h2 class="section-title scroll-animate" data-animate="fade-up">Social Impact Initiatives</h2>
         <div class="card-grid two">
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="0">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -57,7 +69,7 @@
             <h3>Mentorship Programs</h3>
             <p>Training young professionals in architecture, engineering, and planning through practical exposure and guidance.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="1">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
@@ -68,7 +80,7 @@
             <h3>Community Development Projects</h3>
             <p>Focused township upliftment efforts and sustainable housing initiatives that align technical planning with social outcomes.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="2">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -78,7 +90,7 @@
             <h3>Scholarships &amp; Workshops</h3>
             <p>Empowering the next generation of planners, engineers, and architects through learning opportunities and skills transfer.</p>
           </article>
-          <article class="card card-hover">
+          <article class="card card-hover scroll-animate" data-animate="fade-up" data-delay="3">
             <span class="icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--white);">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -93,15 +105,15 @@
 
     <section class="section section-alt">
       <div class="container split">
-        <div>
-          <h2 class="section-title">Heritage &amp; Identity</h2>
+        <div class="scroll-animate" data-animate="fade-up" data-delay="0">
+          <h2 class="section-title scroll-animate" data-animate="fade-up">Heritage &amp; Identity</h2>
           <ul class="detail-list">
             <li>The Mathiss name honors the family name Mathivhulula</li>
             <li>Professional identity grounded in culture, innovation, and social contribution</li>
             <li>A legacy approach that aligns business growth with community upliftment</li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card scroll-animate" data-animate="fade-up" data-delay="1">
           <h3>Legacy Commitment</h3>
           <p>
             Every project is an opportunity to combine compliance, sustainability, and technical quality while empowering communities,
@@ -197,3 +209,6 @@
   </footer>
 </body>
 </html>
+
+
+

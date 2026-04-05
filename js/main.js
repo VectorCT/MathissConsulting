@@ -25,6 +25,23 @@
     }
   });
 
+  const serviceDetailPages = [
+    'service-township-planning.html',
+    'service-architecture.html',
+    'service-engineering.html',
+    'service-construction.html',
+    'service-quantity-surveying.html',
+    'service-land-surveying.html',
+    'service-related-services.html'
+  ];
+
+  if (serviceDetailPages.indexOf(currentPage) !== -1) {
+    const servicesToggle = document.querySelector('.nav-dropdown-toggle');
+    if (servicesToggle) {
+      servicesToggle.classList.add('active');
+    }
+  }
+
   const yearElement = document.getElementById('current-year');
   if (yearElement) {
     yearElement.textContent = String(new Date().getFullYear());
@@ -401,4 +418,46 @@
       });
     }
   }
+
+  function initScrollAnimations() {
+    var animatedElements = document.querySelectorAll('[data-animate]');
+
+    if (animatedElements.length === 0) {
+      return;
+    }
+
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reducedMotion) {
+      animatedElements.forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var delay = el.getAttribute('data-delay');
+
+          if (delay !== null) {
+            el.style.transitionDelay = (parseInt(delay, 10) * 80) + 'ms';
+          }
+
+          el.classList.add('is-visible');
+          observer.unobserve(el);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    animatedElements.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  initScrollAnimations();
 })();

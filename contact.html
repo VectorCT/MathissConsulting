@@ -22,9 +22,21 @@
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle">Services</a>
+          <div class="nav-dropdown-menu" aria-label="Services submenu">
+            <a href="service-township-planning.html">Township Planning</a>
+            <a href="service-architecture.html">Architecture</a>
+            <a href="service-engineering.html">Civil &amp; Structural Engineering</a>
+            <a href="service-construction.html">Construction Management</a>
+            <a href="service-quantity-surveying.html">Quantity Surveying</a>
+            <a href="service-land-surveying.html">Land Surveying</a>
+            <a href="service-related-services.html">Related Services</a>
+          </div>
+        </div>
         <a href="about.html">About Us</a>
         <a href="portfolio.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
         <a href="impact.html">Impact &amp; Legacy</a>
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
@@ -43,12 +55,12 @@
 
     <section class="section">
       <div class="container contact-layout">
-        <article class="card form-card contact-form-shell">
-          <header class="contact-form-header">
+        <article class="card form-card contact-form-shell scroll-animate" data-animate="fade-up" data-delay="0">
+          <div class="contact-form-header">
             <p class="contact-kicker">Request a Consultation</p>
             <h2>Creative Planning and Development Solutions</h2>
             <p>Tell us about your project and we'll get back to you within 24 hours with a customized proposal.</p>
-          </header>
+          </div>
 
           <form id="contact-form" novalidate>
             <div class="contact-grid">
@@ -137,7 +149,7 @@
           </form>
         </article>
 
-        <aside class="card contact-info-panel" aria-label="Contact information and office details">
+        <aside class="card contact-info-panel scroll-animate" data-animate="fade-up" data-delay="1" aria-label="Contact information and office details">
           <section class="contact-info-block">
             <div class="contact-info-head">
               <span class="contact-info-icon" aria-hidden="true">
@@ -180,31 +192,31 @@
             <ul class="contact-social-list">
               <li>
                 <a class="contact-social-link" href="https://www.linkedin.com/in/ungani-mathivhulula-10400a125" target="_blank" rel="noopener">
-                  <img class="contact-social-icon" src="assets/icons/linkedin.svg" alt="" aria-hidden="true">
+                  <img class="contact-social-icon" src="assets/icons/linkedin.svg" alt="" aria-hidden="true" loading="lazy">
                   <span>Ungani Mathivhulula</span>
                 </a>
               </li>
               <li>
                 <a class="contact-social-link" href="https://pin.it/LGF5GSopc" target="_blank" rel="noopener">
-                  <img class="contact-social-icon" src="assets/icons/pinterest.svg" alt="" aria-hidden="true">
+                  <img class="contact-social-icon" src="assets/icons/pinterest.svg" alt="" aria-hidden="true" loading="lazy">
                   <span>MATHISS on Pinterest</span>
                 </a>
               </li>
               <li>
                 <a class="contact-social-link" href="https://www.youtube.com/@MATHISS_Architecture" target="_blank" rel="noopener">
-                  <img class="contact-social-icon" src="assets/icons/youtube.svg" alt="" aria-hidden="true">
+                  <img class="contact-social-icon" src="assets/icons/youtube.svg" alt="" aria-hidden="true" loading="lazy">
                   <span>@MATHISS_Architecture</span>
                 </a>
               </li>
               <li>
                 <a class="contact-social-link" href="https://www.tiktok.com/@mathissarchitects" target="_blank" rel="noopener">
-                  <img class="contact-social-icon" src="assets/icons/tiktok.svg" alt="" aria-hidden="true">
+                  <img class="contact-social-icon" src="assets/icons/tiktok.svg" alt="" aria-hidden="true" loading="lazy">
                   <span>@mathissarchitects</span>
                 </a>
               </li>
               <li>
                 <a class="contact-social-link" href="https://www.facebook.com/profile.php?id=100066409456117" target="_blank" rel="noopener">
-                  <img class="contact-social-icon" src="assets/icons/facebook.svg" alt="" aria-hidden="true">
+                  <img class="contact-social-icon" src="assets/icons/facebook.svg" alt="" aria-hidden="true" loading="lazy">
                   <span>Facebook Profile</span>
                 </a>
               </li>
@@ -306,3 +318,6 @@
   </footer>
 </body>
 </html>
+
+
+
