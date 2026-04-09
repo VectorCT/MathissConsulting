@@ -30,6 +30,29 @@
   --radius: 14px;
 }
 
+[data-theme="dark"] {
+  --white: #121620;
+  --gray-100: #1a1e2a;
+  --gray-200: #242836;
+  --gray-300: #333848;
+  --text-900: #e8eaf0;
+  --text-700: #b0b6c4;
+  --navy-900: #8ab4f8;
+  --navy-800: #6ea1f0;
+  --brand-navy-deep: #8ab4f8;
+  --brand-navy-mid: #6ea1f0;
+  --brand-navy-bright: #5a94e8;
+  --brand-navy-cta-start: #1e3a5f;
+  --brand-navy-cta-end: #162d4e;
+  --brand-navy-footer-start: #0e1a2e;
+  --brand-navy-footer-end: #0a1322;
+  --black-900: #e8eaf0;
+  --black-800: #d0d4de;
+  --shadow-red-soft: rgba(200, 29, 56, 0.25);
+  --shadow-red-ring: rgba(200, 29, 56, 0.3);
+  --error-100: #2a1015;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -218,7 +241,7 @@ img {
 
 .hero {
   position: relative;
-  background: url('/assets/WEBSITE%202026/Cover%202026%20website/MAIN%20MATHISS%20Image.png') center/cover no-repeat;
+  background: url('/assets/Cover%20Image%20on%20Home%20Page.jpeg') center/cover no-repeat;
   color: var(--white);
   padding: 4.4rem 0 4rem;
   overflow: hidden;
@@ -2665,4 +2688,294 @@ body.modal-open {
     transform: none;
     filter: none;
   }
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding: 0.4rem 0.55rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-900);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--gray-100);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle .icon-moon,
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: block;
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] .site-header {
+  background: var(--white);
+  border-bottom-color: var(--gray-300);
+}
+
+[data-theme="dark"] .nav-dropdown-menu {
+  background: var(--gray-100);
+  border-color: var(--gray-300);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .nav-dropdown-menu a {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .persona-card,
+[data-theme="dark"] .module-card {
+  background: var(--gray-100);
+  border-color: var(--gray-300);
+}
+
+[data-theme="dark"] .section-alt {
+  background: var(--gray-100);
+}
+
+[data-theme="dark"] .hero-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .badge {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .feature-item {
+  background: var(--gray-100);
+}
+
+[data-theme="dark"] .nav-toggle {
+  background: var(--gray-100);
+  border-color: var(--gray-300);
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .site-footer {
+  background: var(--gray-100);
+}
+
+[data-theme="dark"] .btn-secondary {
+  border-color: var(--gray-300);
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background: var(--gray-200);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: var(--gray-200);
+  border-color: var(--gray-300);
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .tool-card {
+  background: var(--gray-100);
+}
+
+[data-theme="dark"] .affiliate-card {
+  background: var(--gray-200);
+}
+
+[data-theme="dark"] .service-detail-panel {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .contact-info-panel {
+  background: var(--gray-100);
+}
+
+
+/* Dark mode - hero text must stay white */
+[data-theme="dark"] .hero h1,
+[data-theme="dark"] .hero h2,
+[data-theme="dark"] .hero p,
+[data-theme="dark"] .hero li,
+[data-theme="dark"] .hero .eyebrow,
+[data-theme="dark"] .hero .lead,
+[data-theme="dark"] .hero-highlights li,
+[data-theme="dark"] .hero-panel h2,
+[data-theme="dark"] .hero-panel p,
+[data-theme="dark"] .page-hero h1,
+[data-theme="dark"] .page-hero p,
+[data-theme="dark"] .page-hero .lead,
+[data-theme="dark"] .page-hero .hero-chip {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .hero .btn-secondary,
+[data-theme="dark"] .hero-actions .btn-secondary {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+[data-theme="dark"] .hero-panel .badge {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Dark mode - CTA band text stays white */
+[data-theme="dark"] .cta-band h2,
+[data-theme="dark"] .cta-band p {
+  color: #ffffff;
+}
+
+/* Dark mode - footer text */
+[data-theme="dark"] .site-footer {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .footer-description,
+[data-theme="dark"] .footer-list a,
+[data-theme="dark"] .footer-contact-list span,
+[data-theme="dark"] .footer-contact-list a,
+[data-theme="dark"] .footer-bottom p,
+[data-theme="dark"] .footer-legal a {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .footer-col h3 {
+  color: var(--text-900);
+}
+
+/* Dark mode - section titles and intros */
+[data-theme="dark"] .section-title {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .section-intro {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .eyebrow {
+  color: var(--brand-red-light);
+}
+
+/* Dark mode - service page text */
+[data-theme="dark"] .service-summary,
+[data-theme="dark"] .service-checklist li,
+[data-theme="dark"] .service-includes-title {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .service-card-body h3,
+[data-theme="dark"] .service-card-body p {
+  color: var(--text-900);
+}
+
+/* Dark mode - suite/featured items */
+[data-theme="dark"] .suite-body h3,
+[data-theme="dark"] .featured-body h3 {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .suite-body p,
+[data-theme="dark"] .featured-body p {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .suite-step {
+  color: var(--brand-red-light);
+}
+
+/* Dark mode - feature metrics */
+[data-theme="dark"] .feature-number {
+  color: var(--brand-red);
+}
+
+[data-theme="dark"] .feature-label {
+  color: var(--text-700);
+}
+
+/* Dark mode - persona cards */
+[data-theme="dark"] .persona-card h3 {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .persona-card p {
+  color: var(--text-700);
+}
+
+/* Dark mode - module cards */
+[data-theme="dark"] .module-card h3 {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .module-card p {
+  color: var(--text-700);
+}
+
+/* Dark mode - detail lists */
+[data-theme="dark"] .detail-list li {
+  color: var(--text-700);
+}
+
+/* Dark mode - icon boxes stay as-is */
+[data-theme="dark"] .icon-box {
+  background: linear-gradient(135deg, var(--brand-navy-cta-start), var(--brand-navy-cta-end));
+}
+
+/* Dark mode - text links */
+[data-theme="dark"] .text-link,
+[data-theme="dark"] .service-link {
+  color: var(--brand-red-light);
+}
+
+/* Dark mode - project cards */
+[data-theme="dark"] .project-card {
+  background: var(--gray-100);
+}
+
+[data-theme="dark"] .project-body h3 {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .project-body p {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .project-tag {
+  color: var(--text-700);
+}
+
+
+/* Dark mode - remove gradient on suite/featured items */
+[data-theme="dark"] .suite-item,
+[data-theme="dark"] .featured-item {
+  background: var(--gray-100);
+  border-color: var(--gray-300);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .suite-body p,
+[data-theme="dark"] .featured-body p,
+[data-theme="dark"] .suite-body h3,
+[data-theme="dark"] .featured-body h3 {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .service-link {
+  color: var(--brand-red-light);
 }
