@@ -2979,3 +2979,21 @@ body.modal-open {
 [data-theme="dark"] .service-link {
   color: var(--brand-red-light);
 }
+
+
+/* Dark mode - footer brand name must be light */
+[data-theme="dark"] .footer-brand span {
+  color: #e8eaf0;
+}
+
+/* Dark mode - logo invert for visibility */
+[data-theme="dark"] .brand img,
+[data-theme="dark"] .footer-brand img {
+  filter: brightness(0) invert(1);
+}
+
+
+/* Light mode - footer logo white (footer bg is dark navy) */
+.footer-brand img {
+  filter: brightness(0) invert(1);
+}
