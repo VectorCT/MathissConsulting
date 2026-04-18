@@ -31,12 +31,12 @@
 }
 
 [data-theme="dark"] {
-  --white: #121620;
-  --gray-100: #1a1e2a;
-  --gray-200: #242836;
-  --gray-300: #333848;
-  --text-900: #e8eaf0;
-  --text-700: #b0b6c4;
+  --white: #14181f;
+  --gray-100: #1c2130;
+  --gray-200: #272d3d;
+  --gray-300: #3a4155;
+  --text-900: #f0f2f6;
+  --text-700: #c4c9d6;
   --navy-900: #8ab4f8;
   --navy-800: #6ea1f0;
   --brand-navy-deep: #8ab4f8;
@@ -46,8 +46,8 @@
   --brand-navy-cta-end: #162d4e;
   --brand-navy-footer-start: #0e1a2e;
   --brand-navy-footer-end: #0a1322;
-  --black-900: #e8eaf0;
-  --black-800: #d0d4de;
+  --black-900: #f0f2f6;
+  --black-800: #dce0ea;
   --shadow-red-soft: rgba(200, 29, 56, 0.25);
   --shadow-red-ring: rgba(200, 29, 56, 0.3);
   --error-100: #2a1015;
@@ -563,9 +563,8 @@ h1 {
 
 .service-showcase {
   display: grid;
-  grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1.05fr);
+  grid-template-columns: 1fr;
   gap: 2.2rem;
-  align-items: center;
 }
 
 .service-detail-panel h2 {
@@ -587,7 +586,7 @@ h1 {
 
 .service-summary {
   margin: 0 0 1.35rem;
-  max-width: 62ch;
+  max-width: 80ch;
 }
 
 .service-includes-title {
@@ -2996,4 +2995,73 @@ body.modal-open {
 /* Light mode - footer logo white (footer bg is dark navy) */
 .footer-brand img {
   filter: brightness(0) invert(1);
+}
+
+/* Service section images */
+.service-section-img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0.8rem 0 1.2rem;
+  border: 1px solid var(--gray-300);
+}
+
+.service-content-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.service-content-row.reverse {
+  direction: rtl;
+}
+
+.service-content-row.reverse > * {
+  direction: ltr;
+}
+
+.service-content-row .service-section-img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .service-content-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-content-row.reverse {
+    direction: ltr;
+  }
+}
+
+/* Dark mode - service showcase background fix */
+[data-theme="dark"] .services-page .service-showcase {
+  background:
+    radial-gradient(150% 100% at 100% 0%, rgba(200, 29, 56, 0.06), transparent 58%),
+    linear-gradient(180deg, var(--gray-100), var(--gray-200));
+  border-color: var(--gray-300);
+}
+
+[data-theme="dark"] .services-page .service-detail-panel h3 {
+  color: var(--text-900);
+}
+
+[data-theme="dark"] .services-page .service-detail-panel p {
+  color: var(--text-700);
+}
+
+[data-theme="dark"] .services-page .service-detail-panel h2 {
+  color: var(--navy-900);
+}
+
+[data-theme="dark"] .service-section-img {
+  border-color: var(--gray-300);
 }

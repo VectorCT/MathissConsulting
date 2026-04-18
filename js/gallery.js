@@ -160,8 +160,8 @@ function closeGalleryModal() {
   galleryModal.root.hidden = true;
   galleryModal.root.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
-  galleryModal.frame.removeAttribute("src");
-  galleryModal.frame.removeAttribute("srcdoc");
+  var modalImg = document.getElementById("gallery-modal-img");
+  if (modalImg) modalImg.src = "";
 }
 
 function navigateGalleryModal(direction) {
@@ -175,7 +175,9 @@ function syncModalContent() {
   if (!item) return;
   galleryModal.title.textContent = item.title;
   galleryModal.description.textContent = item.description;
-  var safeSrc = encodeURI(item.image);
-  var safeAlt = item.title.replace(/"/g, "&quot;");
-  galleryModal.frame.srcdoc = '<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0b1f46}img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}</style></head><body><img src="' + safeSrc + '" alt="' + safeAlt + '"></body></html>';
+  var modalImg = document.getElementById("gallery-modal-img");
+  if (modalImg) {
+    modalImg.src = item.image;
+    modalImg.alt = item.title;
+  }
 }
